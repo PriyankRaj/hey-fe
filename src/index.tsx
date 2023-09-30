@@ -17,9 +17,10 @@ const router = createHashRouter([
         children: [
             {
                 index: true,
+                element: <Chat />
             },
             {
-                path: "ask",
+                path: "qa",
                 lazy: () => import("./pages/oneshot/OneShot")
             },
             {
