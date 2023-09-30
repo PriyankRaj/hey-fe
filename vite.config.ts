@@ -23,6 +23,7 @@ export default defineConfig({
         }
     },
     server: {
+        port: 8080,
         proxy: {
             "/ask": "http://localhost:50505",
             "/chat": "http://localhost:50505"
